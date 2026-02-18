@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adecuaciones Curriculares - Presentación Final</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- ESTILOS PREMIUM --- */
+        :root {
+            --gold: #D4AF37;
+            --glass: rgba(0, 0, 0, 0.85); /* Fondo oscuro para contraste máximo */
+            --glass-border: rgba(255, 215, 0, 0.3); /* Borde dorado sutil */
+        }
+
+        .reveal { font-family: 'Montserrat', sans-serif; }
+        
+        /* Títulos */
+        .reveal h1, .reveal h2, .reveal h3 { 
+            font-family: 'Playfair Display', serif;
+            text-transform: none; 
+            text-shadow: 2px 2px 10px rgba(0,0,0,1);
+        }
+        
+        /* Panel de Cristal (Portada) */
+        .glass-panel {
+            background: var(--glass);
+            border: 2px solid var(--glass-border);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+            max-width: 95%;
+            margin: auto;
+        }
+
+        /* Logo */
+        .logo-box {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        /* Información de la Portada */
+        .info-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 30px;
+            border-top: 1px solid var(--gold);
+            padding-top: 20px;
+            text-align: left;
+        }
+
+        .student-list, .date-data, .prof-data { flex: 1; }
+        .date-data { text-align: center; }
+
+        .info-label {
+            color: var(--gold);
+            font-size: 0.7em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+        }
+
+        .info-content { font-size: 0.9em; color: white; line-height: 1.4; }
+
+        /* Tarjetas */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            border-left: 4px solid var(--gold);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Textos destacados */
+        .big-number { font-size: 4em; font-weight: 900; color: var(--gold); }
+        ul.check-list { list-style: none; text-align: left; padding: 0; }
+        ul.check-list li { margin-bottom: 15px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        ul.check-list i { color: var(--gold); margin-right: 10px; }
+
+        /* --- ELEMENTOS FLOTANTES --- */
+        #mascot {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            background-image: url('niñogenio.jpg'); /* ASEGURATE QUE LA FOTO ESTÉ EN LA CARPETA */
+            background-size: cover;
+            background-position: center;
+            z-index: 999;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        #mascot:hover { transform: scale(1.2) rotate(10deg); }
+
+    </style>
+</head>
+<body>
+    
+    <div id="mascot" title="Legislación Educativa"></div>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <section data-background-image="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <div class="logo-box">
+                        <img src="https://www.elempleo.com/cr/sitio-empresarial/CompanySites/universidad-castro-carazo/resources/images/logo-social.png" alt="Logo UCA" style="height: 60px; margin: 0;">
+                    </div>
+                    
+                    <p style="font-size: 0.6em; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0;">Licenciatura en Ciencias de la Educación</p>
+                    <h3 style="color: var(--gold); margin: 5px 0 20px 0; font-size: 1.2em;">Legislación Educativa (LD5033)</h3>
+                    <h1 style="font-size: 2.2em; line-height: 1; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 20px;">Adecuaciones Curriculares</h1>
+                    
+                    <div class="info-box">
+                        <div class="student-list">
+                            <span class="info-label"><i class="fas fa-users"></i> Grupo 4</span>
+                            <div class="info-content">
+                                <strong>Daniel Tijerino</strong><br>
+                                <strong>Keyleen Gamboa</strong>
+                            </div>
+                        </div>
+                        <div class="date-data">
+                             <span class="info-label"><i class="fas fa-calendar-alt"></i> Fecha</span>
+                            <div class="info-content" style="font-size: 1.1em; font-weight: bold;">
+                                21 de Febrero, 2026
+                            </div>
+                        </div>
+                        <div class="prof-data" style="text-align: right;">
+                            <span class="info-label"><i class="fas fa-chalkboard-teacher"></i> Profesora</span>
+                            <div class="info-content">
+                                Hilda María González Barahona
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <h3>El Crecimiento Histórico</h3>
+                    <div class="card-grid">
+                        <div class="fragment">
+                            <span style="font-size: 1.5em; color: #aaa;">2003</span><br>
+                            <span class="big-number" style="font-size: 2.5em; color:white;">84k</span>
+                        </div>
+                        <div class="fragment">
+                            <span style="font-size: 1.5em; color: #ccc;">2010</span><br>
+                            <span class="big-number" style="font-size: 3em; color:white;">138k</span>
+                        </div>
+                        <div class="fragment">
+                            <span style="font-size: 1.5em; color: var(--gold);">2015</span><br>
+                            <span class="big-number">145k</span>
+                        </div>
+                    </div>
+                    <p class="fragment" style="margin-top: 30px; font-weight: bold; background: rgba(255,255,255,0.1); padding: 10px;">
+                        <i class="fas fa-chart-line"></i> Tendencia que obligó a la reforma del 2026.
+                    </p>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1587654780291-39c940483719?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <h3>Definiciones Estratégicas</h3>
+                    <div class="card-grid">
+                        <div class="card fragment">
+                            <h4 style="color: var(--gold);"><i class="fas fa-sliders-h"></i> Adecuación</h4>
+                            <p style="font-size: 0.8em;">Ajuste del sistema al individuo. No es un favor, es una herramienta de equidad.</p>
+                        </div>
+                        <div class="card fragment" style="border-left-color: #00d2ff;">
+                            <h4 style="color: #00d2ff;"><i class="fas fa-project-diagram"></i> Currículo</h4>
+                            <p style="font-size: 0.8em;">El plan integral: Qué, Cómo, Cuándo enseñar y evaluar.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1477281765962-ef34e8bb0967?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div style="background: rgba(0,0,0,0.8); padding: 50px; border-radius: 20px;">
+                    <h2>Los 3 Niveles de Intervención</h2>
+                    <br>
+                    <div class="fragment" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <span style="background: var(--gold); color: black; padding: 10px 20px; font-weight: bold; border-radius: 5px; margin-right: 20px;">1</span>
+                        <h4>De Acceso <small>(Entorno)</small></h4>
+                    </div>
+                    <div class="fragment" style="display: flex; align-items: center; margin-bottom: 20px;">
+                        <span style="background: white; color: black; padding: 10px 20px; font-weight: bold; border-radius: 5px; margin-right: 20px;">2</span>
+                        <h4>No Significativa <small>(Metodología)</small></h4>
+                    </div>
+                    <div class="fragment" style="display: flex; align-items: center;">
+                        <span style="background: #ff4757; color: white; padding: 10px 20px; font-weight: bold; border-radius: 5px; margin-right: 20px;">3</span>
+                        <h4>Significativa <small>(Contenidos)</small></h4>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel" style="margin-top: 150px;">
+                    <h3>1. Adecuación de Acceso</h3>
+                    <p>"Modificar el entorno para eliminar barreras."</p>
+                    <div style="display: flex; justify-content: space-around; font-size: 3em; margin-top: 30px;">
+                        <i class="fas fa-wheelchair fragment" style="color: var(--gold);"></i>
+                        <i class="fas fa-low-vision fragment" style="color: white;"></i>
+                        <i class="fas fa-deaf fragment" style="color: white;"></i>
+                        <i class="fas fa-laptop-code fragment" style="color: var(--gold);"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel" style="text-align: left;">
+                    <h3 style="color: var(--gold);">2. No Significativa</h3>
+                    <p>Cambia la <strong>FORMA</strong>, mantiene el <strong>FONDO</strong>.</p>
+                    <ul class="check-list">
+                        <li class="fragment"><i class="fas fa-check-circle"></i> Tiempo adicional en pruebas.</li>
+                        <li class="fragment"><i class="fas fa-check-circle"></i> Recinto Aparte.</li>
+                        <li class="fragment"><i class="fas fa-check-circle"></i> Uso de diccionario o calculadora.</li>
+                        <li class="fragment"><i class="fas fa-check-circle"></i> Aprobación: <strong>Docente</strong>.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1516575334481-f85287c2c81d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel" style="border-color: #ff4757;">
+                    <h3 style="color: #ff4757;"><i class="fas fa-exclamation-triangle"></i> 3. Significativa</h3>
+                    <p><strong>Modificación sustancial del currículo oficial.</strong></p>
+                    <div class="card-grid">
+                        <div class="card">
+                            <i class="fas fa-eraser" style="font-size: 2em; margin-bottom: 10px;"></i>
+                            <p>Eliminación de objetivos/contenidos.</p>
+                        </div>
+                        <div class="card">
+                            <i class="fas fa-file-signature" style="font-size: 2em; margin-bottom: 10px;"></i>
+                            <p>Aprobación: <strong>Dirección + Comité</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="niñogenio.jpg" data-background-opacity="0.8">
+                <div class="glass-panel">
+                    <h3>Alta Dotación</h3>
+                    <small style="letter-spacing: 2px;">LEY 8899</small>
+                    <div style="display: flex; gap: 20px; margin-top: 30px;">
+                        <div class="fragment" style="flex: 1; border: 2px solid white; padding: 20px; border-radius: 10px;">
+                            <h4>Enriquecimiento</h4>
+                            <p style="font-size: 0.7em;">Profundizar horizontalmente sin adelantar.</p>
+                        </div>
+                        <div class="fragment" style="flex: 1; background: var(--gold); color: black; padding: 20px; border-radius: 10px;">
+                            <h4>Aceleración</h4>
+                            <p style="font-size: 0.7em; font-weight: bold;">Saltar de nivel educativo.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div style="background: rgba(0,0,0,0.9); padding: 50px; border-top: 5px solid var(--gold); border-bottom: 5px solid var(--gold);">
+                    <h2 style="color: var(--gold); font-size: 3em;">Fundamento Jurídico</h2>
+                    <p style="font-size: 1.5em; color: white;">"No es caridad. Es un mandato vinculante."</p>
+                    <i class="fas fa-balance-scale" style="font-size: 4em; color: var(--gold); margin-top: 20px;"></i>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <h3>Jerarquía Normativa</h3>
+                    <div style="text-align: left; width: 80%; margin: auto;">
+                        <div class="fragment" style="background: #e74c3c; color: white; padding: 15px; margin: 10px 0; border-radius: 5px;">
+                            <i class="fas fa-globe"></i> Convención DDHH & Ley 7600
+                        </div>
+                        <div class="fragment" style="background: #c0392b; color: white; padding: 15px; margin: 10px 0; width: 90%; border-radius: 5px;">
+                            <i class="fas fa-gavel"></i> Ley 8899 (Alta Dotación)
+                        </div>
+                        <div class="fragment" style="background: #2c3e50; color: white; padding: 15px; margin: 10px 0; width: 80%; border-radius: 5px; border: 2px solid var(--gold);">
+                            <i class="fas fa-file-contract"></i> <strong>REAC (Acuerdo 2026)</strong>
+                        </div>
+                        <div class="fragment" style="background: #bdc3c7; color: black; padding: 15px; margin: 10px 0; width: 70%; border-radius: 5px; font-weight: bold;">
+                            <i class="fas fa-paperclip"></i> Decreto 38808-MEP
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <h3>El Mandato Imperativo</h3>
+                    <div class="card-grid">
+                        <div class="card fragment">
+                            <h5 style="color:white;">LEY 7600 (Art. 47)</h5>
+                            <p style="color: var(--gold); font-weight: 900; font-size: 1.5em;">"GARANTIZARÁ"</p>
+                            <p style="font-size: 0.8em;">Obligación del Estado (Acceso).</p>
+                        </div>
+                        <div class="card fragment">
+                            <h5 style="color:white;">REAC 2026 (Nuevo)</h5>
+                            <p style="color: #ff4757; font-weight: 900; font-size: 1.5em;">"APROBACIÓN"</p>
+                            <p style="font-size: 0.8em;">Dirección + Comité de Apoyo. <br>Docente solo = ILEGAL.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
+                <div class="glass-panel">
+                    <h3>Conclusión Ejecutiva</h3>
+                    <p style="font-size: 1.3em;">La adecuación es un derecho, pero su pertinencia es técnica.</p>
+                    <div style="margin-top: 30px; border: 2px solid var(--gold); padding: 20px; border-radius: 10px; display: inline-block;">
+                        <i class="fas fa-check-double" style="color: var(--gold);"></i>
+                        <strong>Sin resolución administrativa, no hay adecuación válida.</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-image="https://media.giphy.com/media/nXxOjZrbnbRxS/giphy.gif">
+                <div class="glass-panel" style="background: rgba(0,0,0,0.9);">
+                    <h2 style="color: var(--gold);">¿Preguntas?</h2>
+                    <hr style="border-color: white;">
+                    
+                    <div class="fragment">
+                        <p style="font-size: 1.2em;">Si tienen dudas, consulten el <strong>REAC 2026</strong>.</p>
+                        <p>Si <strong>NO</strong> tienen dudas...</p>
+                    </div>
+
+                    <div class="fragment card" style="background: #2ecc71; color: black; transform: rotate(-2deg); margin-top: 20px; border: 3px solid white;">
+                        <h3 style="margin: 0; font-weight: 900;"><i class="fas fa-running"></i> ¡APROBADO!</h3>
+                        <p style="font-size: 0.9em; font-weight: bold;">
+                            Aplicamos una <span style="color: #c0392b; text-decoration: underline;">Adecuación Significativa</span> al horario para irnos temprano.
+                        </p>
+                    </div>
+
+                    <p class="fragment" style="margin-top: 30px; font-size: 0.6em; opacity: 0.8;">
+                        (Profe, pónganos un 100, no sea como la Sala IV con los recursos de amparo 🙏)
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'concave',
+            backgroundTransition: 'zoom',
+            width: 1200,
+            height: 720,
+            margin: 0.04,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+    </script>
+</body>
+</html>
